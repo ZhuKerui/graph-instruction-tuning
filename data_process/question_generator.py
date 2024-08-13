@@ -8,7 +8,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import itertools
 from networkx import has_path, all_simple_paths, ego_graph, Graph, all_shortest_paths
 
-from Graph import DiGraph
+from graph import DiGraph
 from data_utils import *
 
 def build_edge_prediction(G:DiGraph, attribute_type:str, sample_size:int, edge_sample_size:Dict[str, Any]=None):

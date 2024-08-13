@@ -4,7 +4,7 @@ import gzip
 import pandas as pd
 from collections import defaultdict
 
-from Graph import DiGraph
+from graph import DiGraph
 
 def read_tsv(fname):
     df = pd.read_csv(fname, sep='\t')

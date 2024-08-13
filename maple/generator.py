@@ -15,7 +15,7 @@ from question_generator import DatasetMetaData, QuestionGenerator, \
     find_path_of_length, find_shortest_path, \
     find_ego_graph
 from data_utils import read_tsv
-from Graph import DiGraph
+from graph import DiGraph
 import random
 import itertools
 

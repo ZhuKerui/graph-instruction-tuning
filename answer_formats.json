@@ -1,9 +1,0 @@
-{
-    "node_task": "The answer should only contain node IDs like 'node1' and the nodes are separated by space.",
-    "pair_task": "The answer should only contain node ID pairs wrapped by '()' like '(node1, node2)' and the pairs are separated by space.",
-    "count_task": "The answer should only contain an integer.",
-    "bool_task": "The answer should only contain either 'True' or 'False'.",
-    "path_task": "The answer should only contain node ID sequences wrapped by '()' like '(node1, node2, node3, ...)' and the sequences are separated by space.",
-    "graph_task": "The answer should only contain node ID pairs in the graph wrapped by '()' like '(node1, node2) (node1, node3)' and the pairs are separated by space.",
-    "inductive_task": "The answer should only contain either 'True' or 'False'."
-}
