@@ -1,0 +1,4 @@
+vllm
+accelerate
+peft
+bitsandbytes

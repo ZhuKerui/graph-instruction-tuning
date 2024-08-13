@@ -1,0 +1,364 @@
+{
+    "task_templates": {
+        "cited_paper_of_paper": {
+            "question_template": [
+                "What are the {attribute_type} nodes of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "paper_of_author": {
+            "question_template": [
+                "What are the papers of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "venue_or_authors_of_paper": {
+            "question_template": [
+                "What are the {attribute_type} nodes of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "paper_of_venue": {
+            "question_template": [
+                "What are the papers of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "paper_with_shared_cited_paper": {
+            "question_template": [
+                "What are the papers that share {attribute_type_0} papers with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "paper_with_shared_author_or_venue": {
+            "question_template": [
+                "What are the papers that share {attribute_type_0} nodes with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 9
+            }
+        },
+        "paper_with_shared_author_and_venue": {
+            "question_template": [
+                "What are the papers that share both authors and venue with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "venues_within_hops_to_paper": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 9
+            }
+        },
+        "venues_within_hops_to_author": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "authors_within_hops_to_venue": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 16
+            }
+        },
+        "cite_pairs_with_paper": {
+            "question_template": [
+                "What are the pairs that are connected by {attribute_type_0} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "pairs_with_venue_or_author": {
+            "question_template": [
+                "What are the pairs that are connected by {attribute_type_0} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "three_pair_types_with_paper": {
+            "question_template": [
+                "What are the pairs that are connected by either {attribute_type_0}, {attribute_type_1} or {attribute_type_2} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 11
+            }
+        },
+        "pairs_with_shared_cite": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 12
+            }
+        },
+        "pairs_with_shared_non_cite": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 16
+            }
+        },
+        "pairs_with_2_shared_attributes": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} and {attribute_type_1} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 16
+            }
+        },
+        "cite_num": {
+            "question_template": [
+                "How many {attribute_type_0} nodes does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "paper_num_of_venue": {
+            "question_template": [
+                "How many papers does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "cite_written_by_num": {
+            "question_template": [
+                "How many {attribute_type_0} and {attribute_type_1} nodes does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 14
+            }
+        },
+        "paper_num_of_author": {
+            "question_template": [
+                "How many papers does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 11
+            }
+        },
+        "paper_num_within_hops": {
+            "question_template": [
+                "How many {target_type} nodes are within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 23
+            }
+        },
+        "venue_or_author_num_within_hops": {
+            "question_template": [
+                "How many {target_type} nodes are within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 9
+            }
+        },
+        "path_num_between_paper_paper": {
+            "question_template": [
+                "How many {hop}-hop simple paths exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "path_num_between_non_paper_pair": {
+            "question_template": [
+                "How many {hop}-hop simple paths exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "has_cite_edge": {
+            "question_template": [
+                "Does a {edge_type} edge exist between {source} and {target}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_non_cite_edge": {
+            "question_template": [
+                "Does a {edge_type} edge exist between {source} and {target}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_path_between_paper_paper": {
+            "question_template": [
+                "Does a path exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_path_between_non_paper_pair": {
+            "question_template": [
+                "Does a path exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "find_path_of_length_between_paper_paper": {
+            "question_template": [
+                "What are the {hop}-hop paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "find_path_of_length_between_non_paper_pair": {
+            "question_template": [
+                "What are the {hop}-hop paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "find_shortest_path_between_paper_paper": {
+            "question_template": [
+                "What are the shortest paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 3
+            }
+        },
+        "find_shortest_path_between_non_paper_pair": {
+            "question_template": [
+                "What are the shortest paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 4
+            }
+        },
+        "find_1_hop_ego_graph_for_paper": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "find_1_hop_ego_graph_for_author_or_venue": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 9
+            }
+        },
+        "find_2_hop_ego_graph_for_paper": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 2,
+                "class_bin_end": 23
+            }
+        },
+        "find_2_hop_ego_graph_for_author_or_venue": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 2,
+                "class_bin_end": 21
+            }
+        },
+        "citation_prediction": {
+            "question_template": [
+                "Predict whether there is a cite edge between {head} and {tail}."
+            ],
+            "task_args": {
+                "edge_sample_size": {
+                    "written_by": 0.99,
+                    "cite": 0.1,
+                    "inv_written_by": 0.99,
+                    "inv_published_on": 0.033,
+                    "inv_cite": 0.1
+                }
+            }
+        },
+        "paper_author_prediction": {
+            "question_template": [
+                "Predict whether there is a written_by edge between {head} and {tail}."
+            ],
+            "task_args": {
+                "edge_sample_size": {
+                    "written_by": 0.99,
+                    "cite": 0.1,
+                    "inv_written_by": 0.99,
+                    "inv_published_on": 0.033,
+                    "inv_cite": 0.1
+                }
+            }
+        },
+        "paper_venue_prediction": {
+            "question_template": [
+                "Predict whether there is a published_on edge between {head} and {tail}."
+            ]
+        }
+    },
+    "encoding_templates": [
+        ["Task:\n{instruction}\n\nInformation:\n{input}\n\nAnswer:\n", "{output}", 1]
+    ]
+}

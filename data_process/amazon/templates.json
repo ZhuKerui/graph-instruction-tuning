@@ -1,0 +1,391 @@
+{
+    "task_templates": {
+        "also_view_or_buy_product": {
+            "question_template": [
+                "What are the {attribute_type} nodes of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "product_of_brand": {
+            "question_template": [
+                "What are the products of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "brand_or_category_of_product": {
+            "question_template": [
+                "What are the {attribute_type} nodes of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 4
+            }
+        },
+        "product_of_category": {
+            "question_template": [
+                "What are the products of {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "product_with_shared_also_view_or_buy": {
+            "question_template": [
+                "What are the products that share {attribute_type_0} products with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "product_with_shared_brand_and_category": {
+            "question_template": [
+                "What are the products that share both brand and categories with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "product_with_shared_category_or_brand": {
+            "question_template": [
+                "What are the products that share {attribute_type_0} nodes with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "product_with_shared_also_buy_and_view": {
+            "question_template": [
+                "What are the products that share both {attribute_type_0} and {attribute_type_1} products with {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 3
+            }
+        },
+        "brands_or_categories_within_hops_to_product": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 8
+            }
+        },
+        "brands_within_hops_to_category": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "categories_within_hops_to_brand": {
+            "question_template": [
+                "What are the {target_type} nodes within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 2,
+                "class_bin_end": 9
+            }
+        },
+        "also_view_pairs_with_product": {
+            "question_template": [
+                "What are the pairs that are connected by {attribute_type_0} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "pairs_with_brand_or_category": {
+            "question_template": [
+                "What are the pairs that are connected by {attribute_type_0} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 7
+            }
+        },
+        "three_pair_types_with_product": {
+            "question_template": [
+                "What are the pairs that are connected by either {attribute_type_0}, {attribute_type_1} or {attribute_type_2} edge and contain {source}? List all the node pairs and each pair should be written in source-target order."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "pairs_with_shared_also_view": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "pairs_with_shared_non_also_view": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "pairs_with_2_shared_attributes": {
+            "question_template": [
+                "What are the pairs that share {target_num} {attribute_type_0} and {attribute_type_1} nodes?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "also_view_num": {
+            "question_template": [
+                "How many {attribute_type_0} nodes does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "product_num_of_brand": {
+            "question_template": [
+                "How many products does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "also_view_buy_num": {
+            "question_template": [
+                "How many {attribute_type_0} and {attribute_type_1} nodes does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "product_num_of_category": {
+            "question_template": [
+                "How many products does {source} have?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 10
+            }
+        },
+        "product_num_within_hops": {
+            "question_template": [
+                "How many {target_type} nodes are within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 25
+            }
+        },
+        "brand_or_category_num_within_hops": {
+            "question_template": [
+                "How many {target_type} nodes are within {hop}-hop to {source}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 7
+            }
+        },
+        "path_num_between_product_product": {
+            "question_template": [
+                "How many {hop}-hop simple paths exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "path_num_between_non_product_pair": {
+            "question_template": [
+                "How many {hop}-hop simple paths exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "has_also_view_edge": {
+            "question_template": [
+                "Does a {edge_type} edge exist between {source} and {target}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_non_also_view_edge": {
+            "question_template": [
+                "Does a {edge_type} edge exist between {source} and {target}?"
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_path_between_product_product": {
+            "question_template": [
+                "Does a path exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "has_path_between_non_product_pair": {
+            "question_template": [
+                "Does a path exist between {source} and {target}? Treat the graph as undirected."
+            ],
+            "task_args": {
+                "class_bin_start": 0,
+                "class_bin_end": 1
+            }
+        },
+        "find_path_of_length_between_product_product": {
+            "question_template": [
+                "What are the {hop}-hop paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "find_path_of_length_between_non_product_pair": {
+            "question_template": [
+                "What are the {hop}-hop paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 6
+            }
+        },
+        "find_shortest_path_between_product_product": {
+            "question_template": [
+                "What are the shortest paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 2
+            }
+        },
+        "find_shortest_path_between_non_product_pair": {
+            "question_template": [
+                "What are the shortest paths between {source} and {target}? Treat the graph as undirected and list all the paths."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 4
+            }
+        },
+        "find_1_hop_ego_graph_for_product": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "find_1_hop_ego_graph_for_brand_or_category": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 1,
+                "class_bin_end": 5
+            }
+        },
+        "find_2_hop_ego_graph_for_product": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 5,
+                "class_bin_end": 24
+            }
+        },
+        "find_2_hop_ego_graph_for_brand_or_category": {
+            "question_template": [
+                "What is the ego graph with radius {hop} centered at {center}? Use both in- and out-neighbors of the directed graph."
+            ],
+            "task_args": {
+                "class_bin_start": 3,
+                "class_bin_end": 22
+            }
+        },
+        "coview_prediction": {
+            "question_template": [
+                "Predict whether there is a also_view edge between {head} and {tail}."
+            ],
+            "task_args": {
+                "edge_sample_size": {
+                    "product_of": 3,
+                    "belong_to": 3,
+                    "also_view": 3,
+                    "also_buy": 3,
+                    "inv_product_of": 3,
+                    "inv_belong_to": 3,
+                    "inv_also_view": 3,
+                    "inv_also_buy": 3
+                }
+            }
+        },
+        "co_purchased_prediction": {
+            "question_template": [
+                "Predict whether there is a also_buy edge between {head} and {tail}."
+            ],
+            "task_args": {
+                "edge_sample_size": {
+                    "product_of": 3,
+                    "belong_to": 3,
+                    "also_view": 3,
+                    "also_buy": 3,
+                    "inv_product_of": 3,
+                    "inv_belong_to": 3,
+                    "inv_also_view": 3,
+                    "inv_also_buy": 3
+                }
+            }
+        },
+        "brand_prediction": {
+            "question_template": [
+                "Predict whether there is a product_of edge between {head} and {tail}."
+            ],
+            "task_args": {
+                "edge_sample_size": {
+                    "product_of": 3,
+                    "belong_to": 3,
+                    "also_view": 3,
+                    "also_buy": 3,
+                    "inv_product_of": 3,
+                    "inv_belong_to": 3,
+                    "inv_also_view": 3,
+                    "inv_also_buy": 3
+                }
+            }
+        }
+    },
+    "encoding_templates": [
+        ["Task:\n{instruction}\n\nInformation:\n{input}\n\nAnswer:\n", "{output}", 1]
+    ]
+}
